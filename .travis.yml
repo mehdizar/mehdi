@@ -7,7 +7,6 @@ git:
   
 before_cache:
   - brew cleanup
-
 cache:
   - directories:
     - $HOME/library/Caches/Homebrew
@@ -17,7 +16,7 @@ install:
     - echo "start of pipeline"
     - HOMEBREW_NO_AUTO_UPDATE=1
     
- script:
+script:
     - ls
     - chmod +x hello.sh
     - ./hello.sh
